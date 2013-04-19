@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PShelf E3
+Bundle-SymbolicName: org.eclipsesource.accounting.ui.pshelf.e3;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipsesource.accounting.internal.ui.pshelf.e3.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecp.core;bundle-version="1.0.0",
+ org.eclipsesource.accounting.ui.pshelf;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.core.commands,
+ org.eclipse.jface.viewers,
+ org.eclipse.swt,
+ org.eclipse.swt.widgets,
+ org.eclipse.ui;ui.workbench=split;version="0.0.0",
+ org.eclipse.ui.handlers,
+ org.eclipse.ui.part;ui.workbench=split;version="0.0.0",
+ org.eclipse.ui.plugin

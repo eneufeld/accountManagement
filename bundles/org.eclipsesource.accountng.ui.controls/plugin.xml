@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecp.edit.controls">
+      <control
+            class="org.eclipsesource.accountng.ui.controls.EmailControl"
+            id="org.eclipsesource.accountng.ui.controls.email"
+            showLabel="true"
+            supportedCompositeClass="org.eclipse.swt.widgets.Composite">
+         <staticTest
+               priority="3"
+               singleValue="true"
+               supportedClassType="java.lang.String"
+               supportedEObject="org.eclipsesource.accounting.Employee"
+               supportedFeature="emails">
+         </staticTest>
+      </control>
+   </extension>
+
+</plugin>

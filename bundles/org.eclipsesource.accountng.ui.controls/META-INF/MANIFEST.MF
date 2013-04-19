@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UI Controls
+Bundle-SymbolicName: org.eclipsesource.accountng.ui.controls;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipsesource.accountng.internal.ui.controls.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecp.edit;bundle-version="1.0.0",
+ org.eclipse.emf.ecp.edit.swt;bundle-version="1.0.0",
+ org.eclipsesource.accounting;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.swt,
+ org.eclipse.swt.events,
+ org.eclipse.swt.layout,
+ org.eclipse.swt.widgets

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.emf.ecp.ui.ModelExplorerView">
+         <command
+               commandId="org.eclipsesource.accounting.ui.pshelf.e3.command.projectPshelf"
+               label="Show ECPProject"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <with
+                     variable="activeMenuSelection">
+                  <count
+                        value="1">
+                  </count>
+                  <iterate>
+                     <instanceof
+                           value="org.eclipse.emf.ecp.core.ECPProject">
+                     </instanceof>
+                  </iterate>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.eclipsesource.accounting.internal.ui.pshelf.e3.ECPProjectPShelfHandler"
+            id="org.eclipsesource.accounting.ui.pshelf.e3.command.projectPshelf"
+            name="Show ECPProject">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="org.eclipsesource.accounting.internal.ui.pshelf.e3.ProjectPShelfViewPart"
+            id="org.eclipsesource.accounting.ui.pshelf.e3.pshelf"
+            name="PShelf"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

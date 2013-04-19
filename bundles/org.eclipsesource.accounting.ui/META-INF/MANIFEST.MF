@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UI Controls
+Bundle-SymbolicName: org.eclipsesource.accounting.ui
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipsesource.account.internal.ui.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipsesource.accounting;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.eclipsesource.account.internal.ui;x-internal:=true,
+ org.eclipsesource.account.ui
+Import-Package: org.eclipse.jface.layout,
+ org.eclipse.swt,
+ org.eclipse.swt.widgets
